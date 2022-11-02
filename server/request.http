@@ -1,0 +1,184 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "henry",
+    "password": "henry"
+}
+
+###
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "test"
+}
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "jim",
+    "password": "jim"
+}
+
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "summer",
+    "password": "summer"
+}
+
+
+//eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzI4NzMzNWY1YjI3YTY5NjVjOGE1MTMiLCJpYXQiOjE2NjM1OTUzMTd9.49OE8BCUz8KeFyRSrfcm11vjyHo5bAEdZCw5JNj-Afg
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "jim",
+    "password": "jim"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "test",
+    "password": "test"
+}
+
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "summer",
+    "password": "summer"
+}
+
+
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "henry",
+    "password": "henry"
+}
+
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzIzNDMzOGMzMDg4ODY4ZmM4YWM4YWMiLCJpYXQiOjE2NjMyNTUzNTJ9.Qu-whgsVo8qOZSlV0JPgTPHfbm0TPPNA3qQ_Bt96KYU
+
+{   
+    "title": "Day la title",
+    "description": "React",
+    "url": "react.com",
+    "status": "LEARNED"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzIzM2M1OTgwODNhMzNjMmE2YzQzY2YiLCJpYXQiOjE2NjM5NTYxNjJ9.JeanFbR2aEoNu80VkMfExrGTCJOEOSGkLOCmy_iobdw
+
+{   
+    "title": "Check 1",
+    "description": "React",
+    "url": "react.com",
+    "status": "LEARNING"
+}
+
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzIzNDMzOGMzMDg4ODY4ZmM4YWM4YWMiLCJpYXQiOjE2NjMyNTUzNTJ9.Qu-whgsVo8qOZSlV0JPgTPHfbm0TPPNA3qQ_Bt96KYU
+
+{   
+    "title": "Day la title thu 3 hihi",
+    "description": "Redux",
+    "url": "react.com",
+    "status": "TO LEARN"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzIzNDMzOGMzMDg4ODY4ZmM4YWM4YWMiLCJpYXQiOjE2NjMyNTUzNTJ9.Qu-whgsVo8qOZSlV0JPgTPHfbm0TPPNA3qQ_Bt96KYU
+
+{   
+    "title": "Day la title thu 4",
+    "description": "NodeJs",
+    "url": "nodejs.com",
+    "status": "TO LEARN"
+}
+
+
+
+
+
+
+###
+
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzIzNDMzOGMzMDg4ODY4ZmM4YWM4YWMiLCJpYXQiOjE2NjMyNTUzNTJ9.Qu-whgsVo8qOZSlV0JPgTPHfbm0TPPNA3qQ_Bt96KYU
+
+
+
+###
+
+PUT  http://localhost:5000/api/posts/63287aa7a7b0ebea99e48289
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzIzNDMzOGMzMDg4ODY4ZmM4YWM4YWMiLCJpYXQiOjE2NjMyNTUzNTJ9.Qu-whgsVo8qOZSlV0JPgTPHfbm0TPPNA3qQ_Bt96KYU
+
+{   
+    "title": "Day la title sau khi update 1 hihi",
+    "description": "Angular",
+    "url": "angular.org",
+    "status": "LEARNING"
+}
+
+
+
+###
+
+DELETE http://localhost:5000/api/posts/63235191b22f7a516d6d6f55
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzIzNDMzOGMzMDg4ODY4ZmM4YWM4YWMiLCJpYXQiOjE2NjMyNTUzNTJ9.Qu-whgsVo8qOZSlV0JPgTPHfbm0TPPNA3qQ_Bt96KYU
+
+
+
+
+
+
+
+
+###
+
+# POST http://localhost:5000/api/auth/test
+# Content-Type: application/json
+
+# {   
+#     "title": "Vai lon",
+# }
